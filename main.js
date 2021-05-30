@@ -109,6 +109,19 @@ function createpost(post) {
         }, 2000);
 
     });
+}function createpost(post) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            posts.push(post);
+            const err = false;
+            if (!err) {
+                resolve();
+            } else {
+                reject('Wrong');
+            }
+        }, 2000);
+
+    });
 }
 
 
